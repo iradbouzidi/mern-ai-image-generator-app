@@ -30,7 +30,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          `${import.meta.env.VITE_DEV_BACKEND_URL}/api/v1/dalle`,
+          `${import.meta.env.VITE_PROD_BACKEND_URL}/api/v1/dalle`,
           {
             method: "POST",
             headers: {
@@ -61,7 +61,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_DEV_BACKEND_URL}/api/v1/post`,
+          `${import.meta.env.VITE_PROD_BACKEND_URL}/api/v1/post`,
           {
             method: "POST",
             headers: {

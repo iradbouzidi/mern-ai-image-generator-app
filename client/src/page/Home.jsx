@@ -25,7 +25,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_DEV_BACKEND_URL}/api/v1/post`,
+        `${import.meta.env.VITE_PROD_BACKEND_URL}/api/v1/post`,
         {
           method: "GET",
           headers: {
